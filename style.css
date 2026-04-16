@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f5;
+}
+.logo {
+    width: 140px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+/* layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+    width: 320px;
+    padding: 25px;
+    background: linear-gradient(180deg, #007e7a, #004d4a); /* 👈 cor principal Vale */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+}
+
+/* título */
+.sidebar h2 {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+    color: #a7ffeb; /* verde claro elegante */
+}
+
+/* inputs */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs input {
+    width: 95%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* botão */
+.sidebar button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #00a884; /* verde Vale mais equilibrado */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #00c853;
+    transform: scale(1.03);
+}
+
+/* info */
+.info-box {
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* mapa */
+#map {
+    flex: 1;
+    height: 100%;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    #map {
+        height: 70vh;
+    }
+}

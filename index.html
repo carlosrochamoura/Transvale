@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Transvale</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2 class="titulo">
+            <img src="logo.png" alt="Transvale" class="logo">
+            TRANSVALE
+        </h2>
+
+        <div class="inputs">
+            <input id="origem" placeholder="Origem">
+            <input id="destino" placeholder="Destino">
+        </div>
+
+        <button onclick="buscarRota()">Buscar Rota</button>
+
+        <div class="info-box">
+            <p id="info">Aguardando rota...</p>
+            <p id="veiculos">Veículos disponíveis: -</p>
+        </div>
+
+    </div>
+
+    <div id="map"></div>
+
+</div>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Turf -->
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf/turf.min.js"></script>
+
+<!-- Script principal -->
+<script src="script.js"></script>
+
+</body>
+</html>
